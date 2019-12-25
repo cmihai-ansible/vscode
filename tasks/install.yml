@@ -1,0 +1,8 @@
+---
+# Install vscode packages
+
+- name: packages are installed
+  package:
+    name: "{{ vscode_packages_install }}"
+    state: present
+  become: true

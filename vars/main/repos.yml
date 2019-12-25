@@ -1,0 +1,15 @@
+---
+# Repo files to create
+_vscode_repos_create:
+  all:
+    - name: visual-studio-code
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  CentOS_7: []
+  RedHat_7: []
+  CentOS_8: []
+  RedHat_8: []
+  Fedora_31: []

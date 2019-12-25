@@ -1,0 +1,15 @@
+---
+# vars file for packages
+
+# Detected OS
+my_os: "{{ ansible_distribution }}_{{ ansible_distribution_major_version }}"
+
+# Repos create
+vscode_repos_create: "{{ _vscode_repos_create['all']
+  | union ( _vscode_repos_create[my_os]
+  | default([]) ) }}"
+
+# Packages lists
+vscode_packages_install: "{{ _vscode_packages_install['all']
+  | union ( _vscode_packages_install[my_os]
+  | default([]) ) }}"

@@ -1,0 +1,17 @@
+---
+- name: RPM key is imported and repo file is created
+  block:
+    - name: "install {{ item.gpgkey }} rpm key"
+      rpm_key:
+        state: present
+        key: "{{ item.gpgkey }}"
+
+    - name: create rpm repo file
+      yum_repository:
+        name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        baseurl: "{{ item.baseurl }}"
+        enabled: "{{ item.enabled | default(1) }}"
+        gpgcheck: "{{ item.gpgcheck | default(0) }}"
+        gpgkey: "{{ item.gpgkey | default(omit) }}"
+  become: true

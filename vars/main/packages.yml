@@ -1,0 +1,10 @@
+---
+# Install packages
+_vscode_packages_install:
+  all:
+    - code
+  CentOS_7: []
+  RedHat_7: []
+  CentOS_8: []
+  RedHat_8: []
+  Fedora_31: []
