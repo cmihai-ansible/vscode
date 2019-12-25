@@ -1,11 +1,7 @@
 # Molecule managed
 ---
-command:
-  help:
-    exit-status: 0
-    exec: "code --user-data-dir=/tmp --version"
-    stdout:
-      - "/x64/"
-    stderr: []
-    timeout: 10000      # in milliseconds
-    skip: false
+file:
+  /usr/bin/code:
+    exists: true
+    owner: root
+    group: root

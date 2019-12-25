@@ -22,15 +22,6 @@ Requirements
 Role Variables
 --------------
 
-```
-vscode_remove_packages: true
-vscode_enable_service: true
-vscode_enable_selinux: true
-vscode_enable_selinux: true
-vscode_firewall_configure: true
-vscode_firewall_rules:
-  - service:
-```
 
 Dependencies
 ------------
