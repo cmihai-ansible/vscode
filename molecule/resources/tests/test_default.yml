@@ -3,9 +3,9 @@
 command:
   help:
     exit-status: 0
-    exec: "systemctl is-active vscode"
+    exec: "code --user-data-dir=/tmp --version"
     stdout:
-      - "/active/"
+      - "/x64/"
     stderr: []
     timeout: 10000      # in milliseconds
     skip: false
