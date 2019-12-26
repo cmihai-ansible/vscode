@@ -8,7 +8,7 @@ vscode
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/crivetimihai/vscode(https://galaxy.ansible.com/crivetimihai/vscode)
+[https://galaxy.ansible.com/crivetimihai/vscode](https://galaxy.ansible.com/crivetimihai/vscode)
 
 ```bash
 ansible-galaxy install crivetimihai.vscode
