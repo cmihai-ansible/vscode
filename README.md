@@ -42,12 +42,6 @@ Example Playbook
     - name: vscode is configured
       import_role:
         name: crivetimihai.vscode
-      vars:
-        vscode_remove_packages: true
-        vscode_enable_service: true
-        vscode_firewall_configure: true
-        vscode_firewall_rules:
-          - service:
       tags: vscode
 ```
 
