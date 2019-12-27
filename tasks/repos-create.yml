@@ -22,6 +22,11 @@
 
 - name: DEB key is imported and apt file is create
   block:
+    - name: gpg is installed
+      package:
+        name: gnupg
+        state: present
+
     - name: apt gpg key is present
       apt_key:
         state: present

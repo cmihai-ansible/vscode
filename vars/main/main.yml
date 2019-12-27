@@ -10,6 +10,9 @@ vscode_repos_create: "{{ _vscode_repos_create['all']
   | default([]) ) }}"
 
 # Packages lists
+docker_packages_prereq: "{{ _docker_packages_prereq['all']
+  | union ( _docker_packages_prepreq[my_os]
+  | default([]) ) }}"
 vscode_packages_install: "{{ _vscode_packages_install['all']
   | union ( _vscode_packages_install[my_os]
   | default([]) ) }}"
