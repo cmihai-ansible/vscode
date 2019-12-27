@@ -8,3 +8,5 @@ _vscode_packages_install:
   CentOS_8: []
   RedHat_8: []
   Fedora_31: []
+  Debian_10: []
+  Ubuntu_18: []

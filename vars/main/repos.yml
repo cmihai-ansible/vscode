@@ -1,15 +1,47 @@
 ---
 # Repo files to create
 _vscode_repos_create:
-  all:
+  all: []
+  CentOS_7:
     - name: visual-studio-code
       description: Visual Studio Code
       baseurl: https://packages.microsoft.com/yumrepos/vscode
       enabled: 1
       gpgcheck: 1
       gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
-  CentOS_7: []
-  RedHat_7: []
-  CentOS_8: []
-  RedHat_8: []
-  Fedora_31: []
+  RedHat_7:
+    - name: visual-studio-code
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  CentOS_8:
+    - name: visual-studio-code
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  RedHat_8:
+    - name: visual-studio-code
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  Fedora_31:
+    - name: visual-studio-code
+      description: Visual Studio Code
+      baseurl: https://packages.microsoft.com/yumrepos/vscode
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  Debian_10:
+    - repo: "deb https://packages.microsoft.com/repos/vscode stable main"
+      filename: /etc/apt/sources.list.d/vscode.list
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+  Ubuntu_18:
+    - repo: "deb https://packages.microsoft.com/repos/vscode stable main"
+      filename: /etc/apt/sources.list.d/vscode.list
+      gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
