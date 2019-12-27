@@ -1,7 +1,7 @@
 ---
 - name: RPM key is imported and repo file is created
   block:
-    - name: "install {{ item.gpgkey }} rpm key"
+    - name: rpm gpgkey is installed
       rpm_key:
         state: present
         key: "{{ item.gpgkey }}"
