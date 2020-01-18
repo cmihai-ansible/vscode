@@ -6,3 +6,9 @@
     name: "{{ vscode_packages_install }}"
     state: present
   become: true
+
+- name: plugins are installed
+  command: code --install-extension {{ item }}
+  become: true
+  become_user: "{{ vscode_extensions_user }}"
+  loop: "{{ vscode_extensions_install }}"
