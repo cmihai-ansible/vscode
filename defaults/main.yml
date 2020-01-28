@@ -1,7 +1,7 @@
 ---
 # defaults file for vscode
 
-vscode_extensions_user: devops
+vscode_extensions_user: ansible
 vscode_extensions_install:
   - dhoeric.ansible-vault
   - ecmel.vscode-html-css
